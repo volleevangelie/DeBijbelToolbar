@@ -171,8 +171,8 @@
 				+ '<span class="openbijbelknop vertalingkeus ESV" data-translation="ESV">ESV</span> '
 				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus NKJV" data-translation="NKJV">NKJV</span> '
-				+ '<span class="openbijbelknop vertalingkeus AMP" data-translation="AMP">AMP</span>'
-				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span>'
+				+ '<span class="openbijbelknop vertalingkeus AMP" data-translation="AMP">AMP</span> '
+				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
 			+ '</div>';
 
  		openBijbelToolBar.append(toolbarContent);
