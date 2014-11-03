@@ -166,7 +166,8 @@
  		var toolbarContent = 
 			'<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; KJV</div>'
 			+ '<div class="openbijbelknoppenarea">'
-				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '	+ '<span class="openbijbelknoptoelichting">Tooltip vertaling: </span>'
+			+ '<span class="openbijbelknoptoelichting">Tooltip vertaling: </span>'
+				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '	
 				+ '<span class="openbijbelknop vertalingkeus NIV" data-translation="NIV">NIV</span> '
 				+ '<span class="openbijbelknop vertalingkeus ESV" data-translation="ESV">ESV</span> '
 				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '
