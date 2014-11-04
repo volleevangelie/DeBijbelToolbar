@@ -164,7 +164,7 @@
 
  		// build the basic content of the toolbar
  		var toolbarContent = 
-			'<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; KJV</div>'
+			'<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; </div>'
 			+ '<div class="openbijbelknoppenarea">'
 			+ '<span class="openbijbelknoptoelichting">Tooltip vertaling: </span>'
 				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '	
