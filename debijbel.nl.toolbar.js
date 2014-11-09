@@ -175,6 +175,16 @@
 			+ '</div>';
 
  		openBijbelToolBar.append(toolbarContent);
+ 		
+ 		var toolbarDropdown = 
+			+ '<select>
+				+ '<option class="vertalingoptie" value="KJV">KJV</option>'
+				+ '<option class="vertalingoptie" value="NIV">NIV</option>'
+				+ '<option class="vertalingoptie" value="ESV">ESV</option>'
+				+ '<option class="vertalingoptie" value="YLT">YLT</option>'
+			+ '</select>';
+
+ 		openBijbelToolBar.append(toolbarDropdown);
 
 		// amount of translations
 		var cntTranslations = $('.translation').length;
@@ -238,6 +248,15 @@
  	function bindEvents() {
 
  		openBijbelToolBar.on('click', '.vertalingkeus', function (e) {
+ 			e.preventDefault();
+
+ 			var translation = $(this).data('translation');
+
+ 			chooseTranslation(translation);
+ 			
+ 		});
+ 		
+ 			openBijbelToolBar.on('click', '.vertalingoptie', function (e) {
  			e.preventDefault();
 
  			var translation = $(this).data('translation');
