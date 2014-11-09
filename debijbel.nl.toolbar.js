@@ -174,12 +174,12 @@
 				+ '<span class="openbijbelknop vertalingkeus NKJV" data-translation="NKJV">NKJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
 			+ '</div>'
-				+ '<select name="vertalingopties" id="vertalingopties1">'
-					+ '<option class="vertalingoptie" value="KJV">KJV</option>'
-					+ '<option class="vertalingoptie" value="NIV">NIV</option>'
-					+ '<option class="vertalingoptie" value="ESV">ESV</option>'
-					+ '<option class="vertalingoptie" value="YLT">YLT</option>'
-					+ '<option class="vertalingoptie" value="godsword">GodsWord</option>'
+				+ '<select id="vertalingoptiesid">'
+					+ '<option value="KJV">KJV</option>'
+					+ '<option value="NIV">NIV</option>'
+					+ '<option value="ESV">ESV</option>'
+					+ '<option value="YLT">YLT</option>'
+					+ '<option value="godsword">GodsWord</option>'
 					+ '<option class="vertalingoptie" value="HCSB">HCSB</option>'
 					+ '<option class="vertalingoptie" value="NKJV">NKJV</option>'
 					+ '<option class="vertalingoptie" value="NLT">NLT</option>'
@@ -263,12 +263,13 @@
  		});
  		
  		openBijbelToolBar.on('click', '.vertalingoptie', function (e) {
- 			e.preventDefault();
+ 	//		e.preventDefault();
 
- 			var translation = $(".vertalingoptie");
+ 		//	var translation = $(".vertalingoptie");
 
- 			chooseTranslation(translation);
- 			
+ 		//	chooseTranslation(translation);
+ 			var e = document.getElementById("vertalingoptieid");
+			var translation = e.options[e.selectedIndex].value;	
  		});
  		
  		openBijbelToolBar.on('click', '.kiesReset', function() {
