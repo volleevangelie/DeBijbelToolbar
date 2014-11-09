@@ -173,13 +173,14 @@
 				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus NKJV" data-translation="NKJV">NKJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
-				+ '<select>'
+			+ '</div>'
+				+ '<select name="list" id="personlist">'
 					+ '<option class="vertalingoptie" value="volvo">Volvo</option>'
 					+ '<option class="vertalingoptie" value="saab">Saab</option>'
 					+ '<option class="vertalingoptie" value="mercedes">Mercedes</option>'
 					+ '<option class="vertalingoptie" value="audi">Audi</option>'
 				+ '</select>'
-			+ '</div>';
+			;
 
  		openBijbelToolBar.append(toolbarContent);
 
