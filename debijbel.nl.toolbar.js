@@ -175,10 +175,10 @@
 				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
 			+ '</div>'
 				+ '<select name="list" id="personlist">'
-					+ '<option class="vertalingoptie" value="volvo">Volvo</option>'
-					+ '<option class="vertalingoptie" value="saab">Saab</option>'
-					+ '<option class="vertalingoptie" value="mercedes">Mercedes</option>'
-					+ '<option class="vertalingoptie" value="audi">Audi</option>'
+					+ '<option class="vertalingoptie" value="KJV">KJV</option>'
+					+ '<option class="vertalingoptie" value="NIV">NIV</option>'
+					+ '<option class="vertalingoptie" value="ESV">ESV</option>'
+					+ '<option class="vertalingoptie" value="YLT">YLT</option>'
 				+ '</select>'
 			;
 
