@@ -6,7 +6,7 @@
  var refTagger = {
 		settings: {
 			bibleReader: "bible.faithlife",
-			bibleVersion: "KJV"			
+			bibleVersion: "NIV"			
 		}
 	};
 
@@ -62,7 +62,7 @@
  	  */
  	function chooseTranslation(translation) {
  		if (typeof(translation) == 'undefined') {
- 			translation = 'KJV';
+ 			translation = 'NIV';
  		}
 
  		// set the already existing global variable with new options (so no var before this variable)
@@ -105,7 +105,7 @@
  	 */
 	function embedBiblia() {
 		var startVerse = $("sup").first().text();
-		$(".OpenBijbelEmbeddedBiblia").html('<biblia:bible layout="minimal" resource="kjv1900" width="400px" height="1200px" startingReference="' + startVerse + '"></biblia:bible>');
+		$(".OpenBijbelEmbeddedBiblia").html('<biblia:bible layout="minimal" resource="niv2011" width="400px" height="1200px" startingReference="' + startVerse + '"></biblia:bible>');
 		
 		var url = "//biblia.com/api/logos.biblia.js";
 		$.getScript( url, function() {
@@ -164,24 +164,18 @@
 
  		// build the basic content of the toolbar
  		var toolbarContent = 
-			'<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; </div>'
+			'<div class="openbijbelvertalingnaam openbijbelvertaling">[[|]] &nbsp; NIV</div>'
 			+ '<div class="openbijbelknoppenarea">'
-			+ '<span class="openbijbelknoptoelichting">Tooltip vertaling: </span>'
-				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '	
+				+ '<span class="openbijbelknoptoelichting">Tooltip vertaling: </span>'
 				+ '<span class="openbijbelknop vertalingkeus NIV" data-translation="NIV">NIV</span> '
 				+ '<span class="openbijbelknop vertalingkeus ESV" data-translation="ESV">ESV</span> '
+				+ '<span class="openbijbelknop vertalingkeus KJV" data-translation="KJV">KJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus NKJV" data-translation="NKJV">NKJV</span> '
-				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
-			+ '</div>'
-			+ '<select>
-				+ '<option class="vertalingoptie" value="KJV">KJV</option>'
-				+ '<option class="vertalingoptie" value="NIV">NIV</option>'
-				+ '<option class="vertalingoptie" value="ESV">ESV</option>'
-				+ '<option class="vertalingoptie" value="YLT">YLT</option>'
-			+ '</select>';
-			
+				+ '<span class="openbijbelknop vertalingkeus NLT" data-translation="NLT">NLT</span>'
+			+ '</div>';
+
  		openBijbelToolBar.append(toolbarContent);
- 	
+
 		// amount of translations
 		var cntTranslations = $('.translation').length;
 
@@ -213,16 +207,16 @@
  		openBijbelToolBar.find(".openbijbelvertalingnaam").css({
 			"font-weight":"bold",
 			"float":"left",
-			"color": "ivory"
+			"color": "white"
 		});
 
 		openBijbelToolBar.find(".openbijbelknoppenarea").css({
-			"color": "#F4FAB1",
+			"color": "#A3A9BC",
 			"float":"right"
 		});
 
 		openBijbelToolBar.find(".openbijbelknop").css({
-			"color": "#F4FAB1",
+			"color": "#93B8F4",
 			"cursor":"pointer"
 		});
 
@@ -251,21 +245,12 @@
  			chooseTranslation(translation);
  			
  		});
- 		
- 			openBijbelToolBar.on('click', '.vertalingoptie', function (e) {
- 			e.preventDefault();
-
- 			var translation = $(this).data('translation');
-
- 			chooseTranslation(translation);
- 			
- 		});
 
  		openBijbelToolBar.on('click', '.kiesReset', function() {
  			showReferences();
 
  			// choose default translation
- 			chooseTranslation("KJV");
+ 			chooseTranslation("NIV");
  			
 		});
 
@@ -304,7 +289,7 @@
  		setupTopBar();
 
  		// choose default translation
- 		chooseTranslation("KJV");
+ 		chooseTranslation("NIV");
 
  		bindEvents();
  	}
