@@ -172,20 +172,16 @@
 				+ '<span class="openbijbelknop vertalingkeus ESV" data-translation="ESV">ESV</span> '
 				+ '<span class="openbijbelknop vertalingkeus NKJV" data-translation="NKJV">NKJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
-			+ '</div>';
-
- 		openBijbelToolBar.append(toolbarContent);
- 		
- 		var toolbarDropdown = 
+			+ '</div>'
 			+ '<select>
 				+ '<option class="vertalingoptie" value="KJV">KJV</option>'
 				+ '<option class="vertalingoptie" value="NIV">NIV</option>'
 				+ '<option class="vertalingoptie" value="ESV">ESV</option>'
 				+ '<option class="vertalingoptie" value="YLT">YLT</option>'
 			+ '</select>';
-
- 		openBijbelToolBar.append(toolbarDropdown);
-
+			
+ 		openBijbelToolBar.append(toolbarContent);
+ 	
 		// amount of translations
 		var cntTranslations = $('.translation').length;
 
