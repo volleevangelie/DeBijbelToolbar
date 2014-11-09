@@ -174,7 +174,7 @@
 				+ '<span class="openbijbelknop vertalingkeus NKJV" data-translation="NKJV">NKJV</span> '
 				+ '<span class="openbijbelknop vertalingkeus YLT" data-translation="YLT">YLT (ot)</span> '
 			+ '</div>'
-				+ '<select name="vertalingoptie" id="vertalingoptie">'
+				+ '<select name="vertalingopties" id="vertalingopties1">'
 					+ '<option class="vertalingoptie" value="KJV">KJV</option>'
 					+ '<option class="vertalingoptie" value="NIV">NIV</option>'
 					+ '<option class="vertalingoptie" value="ESV">ESV</option>'
